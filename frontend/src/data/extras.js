@@ -1,5 +1,5 @@
 // Famous 911 owners with documented connections to the model.
-// Images are evocative Porsche photography (Unsplash) representing each owner's car/era.
+// Images curated and verified for Porsche content.
 export const FAMOUS_OWNERS = [
   {
     id: "steve-mcqueen",
@@ -10,7 +10,7 @@ export const FAMOUS_OWNERS = [
     note:
       "«The King of Cool» kjørte selv den lyse 911 S i åpningssekvensen til filmen Le Mans (1971). Bilen ble auksjonert for over 1,4 mill. dollar i 2011.",
     image:
-      "https://images.unsplash.com/photo-1611821064430-0d40291922d2?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1691315036348-85bf02674ae1?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODl8MHwxfHNlYXJjaHwxfHxwb3JzY2hlJTIwOTExJTIwdmludGFnZXxlbnwwfHx8fDE3NzczOTU5Mzd8MA&ixlib=rb-4.1.0&q=85",
   },
   {
     id: "jerry-seinfeld",
@@ -21,7 +21,7 @@ export const FAMOUS_OWNERS = [
     note:
       "En av verdens største private Porsche-samlere. Eier første og siste 911 produsert, i tillegg til en 1999 Classic Club Coupe verdt over 1 mill. dollar.",
     image:
-      "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1691315037880-75cac21a9889?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODl8MHwxfHNlYXJjaHwzfHxwb3JzY2hlJTIwOTExJTIwdmludGFnZXxlbnwwfHx8fDE3NzczOTU5Mzd8MA&ixlib=rb-4.1.0&q=85",
   },
   {
     id: "paul-newman",
@@ -32,7 +32,7 @@ export const FAMOUS_OWNERS = [
     note:
       "Aktiv racerfører som kjørte Porsche 935 til andreplass i Le Mans 1979. Hjemme i garasjen sto flere private 911-er — alltid praktisk konfigurert.",
     image:
-      "https://images.unsplash.com/photo-1614200179396-2bdb77ebf81b?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1691315035631-1226f24cf2e3?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODl8MHwxfHNlYXJjaHwyfHxwb3JzY2hlJTIwOTExJTIwdmludGFnZXxlbnwwfHx8fDE3NzczOTU5Mzd8MA&ixlib=rb-4.1.0&q=85",
   },
   {
     id: "magnus-walker",
@@ -41,9 +41,9 @@ export const FAMOUS_OWNERS = [
     era: "Los Angeles · 90-tallet →",
     car: "1971 Porsche 911 'Outlaw'",
     note:
-      "Den britiske moteskaperen ble verdenskjent for sin rå, dreadlokkete tolkning av luftkjølte 911-er. Bilbyggeriet hans har gjort hele en generasjon til 911-fans.",
+      "Den britiske moteskaperen ble verdenskjent for sin rå, dreadlokkete tolkning av luftkjølte 911-er. Bilbyggeriet hans har gjort en hel generasjon til 911-fans.",
     image:
-      "https://images.unsplash.com/photo-1611016186353-9af58c69a533?auto=format&fit=crop&w=1200&q=80",
+      "https://images.pexels.com/photos/36427283/pexels-photo-36427283.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
   },
   {
     id: "patrick-dempsey",
@@ -54,7 +54,7 @@ export const FAMOUS_OWNERS = [
     note:
       "«Dr. McDreamy» har kjørt Porsche 911 RSR for sitt eget Dempsey-Proton Racing i Le Mans 24-timer flere ganger. Klassepallen er hjembrakt.",
     image:
-      "https://images.unsplash.com/photo-1614162883005-343e95da4a78?auto=format&fit=crop&w=1200&q=80",
+      "https://images.pexels.com/photos/35849577/pexels-photo-35849577.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
   },
   {
     id: "jay-leno",
@@ -65,12 +65,11 @@ export const FAMOUS_OWNERS = [
     note:
       "I sitt berømte «Garage» har Leno regelmessig framhevet 911 GT3 RS som favoritten sin: «Ingen annen produsent klarer å lage en bil med samme sjel.»",
     image:
-      "https://images.unsplash.com/photo-1580274455191-1c62238fa333?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1683403792821-7542e25aadcf?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1ODh8MHwxfHNlYXJjaHwxfHxwb3JzY2hlJTIwZ3QzJTIwcnN8ZW58MHx8fHwxNzc3Mzk1OTM3fDA&ixlib=rb-4.1.0&q=85",
   },
 ];
 
-// Selected overall Le Mans 24h wins for Porsche.
-// Note: 19 overall wins total. Below is a curated 8 representing iconic eras.
+// Selected overall Le Mans 24h wins for Porsche (8 of 19 totals).
 export const LE_MANS_WINS = [
   {
     year: "1970",
@@ -79,7 +78,7 @@ export const LE_MANS_WINS = [
     note:
       "Porsches aller første totale Le Mans-seier. Det legendariske 917 i Salzburg-fargene tok det historiske gjennombruddet i regnvær.",
     image:
-      "https://images.unsplash.com/photo-1583267746897-2cf66319ef97?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1659716689061-96e52afb127d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzl8MHwxfHNlYXJjaHwxfHxwb3JzY2hlJTIwcmFjZSUyMGNhciUyMGxlJTIwbWFuc3xlbnwwfHx8fDE3NzczOTU5Mzd8MA&ixlib=rb-4.1.0&q=85",
   },
   {
     year: "1971",
@@ -88,7 +87,7 @@ export const LE_MANS_WINS = [
     note:
       "Distansrekord på 5 335 km — en rekord som sto urørt i 39 år. 33 av 49 startende biler var Porsche.",
     image:
-      "https://images.unsplash.com/photo-1614026480418-bd11fde4f568?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1572317267428-183e7d531e50?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzl8MHwxfHNlYXJjaHwzfHxwb3JzY2hlJTIwcmFjZSUyMGNhciUyMGxlJTIwbWFuc3xlbnwwfHx8fDE3NzczOTU5Mzd8MA&ixlib=rb-4.1.0&q=85",
   },
   {
     year: "1977",
@@ -97,7 +96,7 @@ export const LE_MANS_WINS = [
     note:
       "Spektakulær comeback-seier etter alvorlig motorhavari natten gjennom. Ickx tar sin tredje av seks Le Mans-triumfer.",
     image:
-      "https://images.unsplash.com/photo-1626668893632-6f3a4466d22f?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1559534232-07e814de7f1d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzl8MHwxfHNlYXJjaHw0fHxwb3JzY2hlJTIwcmFjZSUyMGNhciUyMGxlJTIwbWFuc3xlbnwwfHx8fDE3NzczOTU5Mzd8MA&ixlib=rb-4.1.0&q=85",
   },
   {
     year: "1979",
@@ -106,7 +105,7 @@ export const LE_MANS_WINS = [
     note:
       "Den eneste 911-baserte totalseieren i Le Mans noensinne. Et privatlag med 935 K3 slo fabrikkbilene i historiens våteste utgave.",
     image:
-      "https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1689013391046-587d4d451026?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzl8MHwxfHNlYXJjaHwyfHxwb3JzY2hlJTIwcmFjZSUyMGNhciUyMGxlJTIwbWFuc3xlbnwwfHx8fDE3NzczOTU5Mzd8MA&ixlib=rb-4.1.0&q=85",
   },
   {
     year: "1982",
@@ -115,16 +114,16 @@ export const LE_MANS_WINS = [
     note:
       "Starten på en utrolig dynastiperiode: Porsche vant Le Mans sju år på rad fra 1981 til 1987 med 956 og senere 962.",
     image:
-      "https://images.unsplash.com/photo-1606664922998-f180bd867205?auto=format&fit=crop&w=1200&q=80",
+      "https://images.pexels.com/photos/17187908/pexels-photo-17187908.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
   },
   {
     year: "1998",
     car: "Porsche 911 GT1",
     drivers: "Allan McNish · Laurent Aïello · Stéphane Ortelli",
     note:
-      "Porsches 16. totalseier — og en feiring av merkets 50-årsjubileum. 911 GT1 sikret seieren med stilren GT1-98-evolusjon.",
+      "Porsches 16. totalseier — en feiring av merkets 50-årsjubileum. 911 GT1 sikret seieren med stilren GT1-98-evolusjon.",
     image:
-      "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1200&q=80",
+      "https://images.pexels.com/photos/13409604/pexels-photo-13409604.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
   },
   {
     year: "2015",
@@ -133,7 +132,7 @@ export const LE_MANS_WINS = [
     note:
       "Porsches comeback-seier i hybridæraen — 17 år etter forrige triumf. Et debutmannskap (Hülkenberg!) på toppen av podiet.",
     image:
-      "https://images.unsplash.com/photo-1626668893632-6f3a4466d22f?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1693149372829-7e0602d5809e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1ODh8MHwxfHNlYXJjaHw0fHxwb3JzY2hlJTIwZ3QzJTIwcnN8ZW58MHx8fHwxNzc3Mzk1OTM3fDA&ixlib=rb-4.1.0&q=85",
   },
   {
     year: "2017",
@@ -142,6 +141,6 @@ export const LE_MANS_WINS = [
     note:
       "Den 19. og foreløpig siste totalseieren. En episk natt der Porsche tok seieren etter at Toyota slet med tekniske problemer.",
     image:
-      "https://images.unsplash.com/photo-1614200179396-2bdb77ebf81b?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1693149351428-15a4961d698d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1ODh8MHwxfHNlYXJjaHwzfHxwb3JzY2hlJTIwZ3QzJTIwcnN8ZW58MHx8fHwxNzc3Mzk1OTM3fDA&ixlib=rb-4.1.0&q=85",
   },
 ];
