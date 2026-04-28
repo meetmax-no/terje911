@@ -1,20 +1,106 @@
+@import url("https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@800,900,500,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+:root {
+    --porsche-yellow: #ffcc00;
+    --porsche-yellow-hover: #e6b800;
+    --porsche-black: #0a0a0a;
+    --porsche-grey: #495057;
+    --porsche-surface: #f8f9fa;
+    --porsche-surface-2: #e9ecef;
+    --porsche-border: #dee2e6;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     font-family:
-        -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-        "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+        "Inter",
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
         sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    background: #ffffff;
+    color: var(--porsche-black);
 }
 
-code {
-    font-family:
-        source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+.font-display {
+    font-family: "Cabinet Grotesk", "Inter", sans-serif;
+    font-weight: 900;
+    letter-spacing: -0.02em;
+}
+
+.font-display-medium {
+    font-family: "Cabinet Grotesk", "Inter", sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+}
+
+::selection {
+    background-color: var(--porsche-yellow);
+    color: var(--porsche-black);
+}
+
+/* Subtle grain overlay utility */
+.grain::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.06;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+    mix-blend-mode: multiply;
+}
+
+/* Marquee */
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+.marquee-track {
+    animation: marquee 38s linear infinite;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(24px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.fade-up {
+    animation: fadeUp 0.9s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+
+/* Yellow glow CTA */
+.yellow-cta {
+    background-color: var(--porsche-yellow);
+    color: var(--porsche-black);
+    transition:
+        transform 200ms ease,
+        box-shadow 200ms ease,
+        background-color 200ms ease;
+}
+.yellow-cta:hover {
+    background-color: var(--porsche-yellow-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 0 -4px rgba(0, 0, 0, 1);
 }
 
 @layer base {
@@ -25,51 +111,20 @@ code {
         --card-foreground: 0 0% 3.9%;
         --popover: 0 0% 100%;
         --popover-foreground: 0 0% 3.9%;
-        --primary: 0 0% 9%;
-        --primary-foreground: 0 0% 98%;
+        --primary: 48 100% 50%;
+        --primary-foreground: 0 0% 4%;
         --secondary: 0 0% 96.1%;
         --secondary-foreground: 0 0% 9%;
         --muted: 0 0% 96.1%;
-        --muted-foreground: 0 0% 45.1%;
-        --accent: 0 0% 96.1%;
-        --accent-foreground: 0 0% 9%;
+        --muted-foreground: 0 0% 30%;
+        --accent: 48 100% 50%;
+        --accent-foreground: 0 0% 4%;
         --destructive: 0 84.2% 60.2%;
         --destructive-foreground: 0 0% 98%;
         --border: 0 0% 89.8%;
         --input: 0 0% 89.8%;
         --ring: 0 0% 3.9%;
-        --chart-1: 12 76% 61%;
-        --chart-2: 173 58% 39%;
-        --chart-3: 197 37% 24%;
-        --chart-4: 43 74% 66%;
-        --chart-5: 27 87% 67%;
-        --radius: 0.5rem;
-    }
-    .dark {
-        --background: 0 0% 3.9%;
-        --foreground: 0 0% 98%;
-        --card: 0 0% 3.9%;
-        --card-foreground: 0 0% 98%;
-        --popover: 0 0% 3.9%;
-        --popover-foreground: 0 0% 98%;
-        --primary: 0 0% 98%;
-        --primary-foreground: 0 0% 9%;
-        --secondary: 0 0% 14.9%;
-        --secondary-foreground: 0 0% 98%;
-        --muted: 0 0% 14.9%;
-        --muted-foreground: 0 0% 63.9%;
-        --accent: 0 0% 14.9%;
-        --accent-foreground: 0 0% 98%;
-        --destructive: 0 62.8% 30.6%;
-        --destructive-foreground: 0 0% 98%;
-        --border: 0 0% 14.9%;
-        --input: 0 0% 14.9%;
-        --ring: 0 0% 83.1%;
-        --chart-1: 220 70% 50%;
-        --chart-2: 160 60% 45%;
-        --chart-3: 30 80% 55%;
-        --chart-4: 280 65% 60%;
-        --chart-5: 340 75% 55%;
+        --radius: 0.25rem;
     }
 }
 
@@ -79,37 +134,5 @@ code {
     }
     body {
         @apply bg-background text-foreground;
-    }
-}
-
-@layer base {
-    [data-debug-wrapper="true"] {
-        display: contents !important;
-    }
-
-    [data-debug-wrapper="true"] > * {
-        margin-left: inherit;
-        margin-right: inherit;
-        margin-top: inherit;
-        margin-bottom: inherit;
-        padding-left: inherit;
-        padding-right: inherit;
-        padding-top: inherit;
-        padding-bottom: inherit;
-        column-gap: inherit;
-        row-gap: inherit;
-        gap: inherit;
-        border-left-width: inherit;
-        border-right-width: inherit;
-        border-top-width: inherit;
-        border-bottom-width: inherit;
-        border-left-style: inherit;
-        border-right-style: inherit;
-        border-top-style: inherit;
-        border-bottom-style: inherit;
-        border-left-color: inherit;
-        border-right-color: inherit;
-        border-top-color: inherit;
-        border-bottom-color: inherit;
     }
 }
