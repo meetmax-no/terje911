@@ -1,10 +1,6 @@
 import React, { useState } from "react";
-import axios from "axios";
 import { toast } from "sonner";
 import { Phone, Mail, MapPin, ArrowUpRight, Loader2 } from "lucide-react";
-
-const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
-const API = `${BACKEND_URL}/api`;
 
 const PHONE_DISPLAY = "951 95 590";
 const PHONE_TEL = "+4795195590";
@@ -29,24 +25,26 @@ const Contact = () => {
       return;
     }
     setSubmitting(true);
+    // DEMO MODE: lagrer kun lokalt (localStorage). Ingen backend.
+    await new Promise((r) => setTimeout(r, 700));
     try {
-      await axios.post(`${API}/contact`, {
-        name: form.name,
-        email: form.email,
-        phone: form.phone || null,
-        subject: form.subject || null,
-        message: form.message,
+      const list = JSON.parse(
+        localStorage.getItem("contact_messages_demo") || "[]"
+      );
+      list.push({
+        ...form,
+        id: crypto.randomUUID
+          ? crypto.randomUUID()
+          : String(Date.now()),
+        created_at: new Date().toISOString(),
       });
-      toast.success("Takk! Meldingen din er mottatt.");
-      setForm({ name: "", email: "", phone: "", subject: "", message: "" });
-    } catch (err) {
-      const detail =
-        err?.response?.data?.detail ||
-        "Noe gikk galt. Prøv igjen om litt.";
-      toast.error(typeof detail === "string" ? detail : "Noe gikk galt.");
-    } finally {
-      setSubmitting(false);
+      localStorage.setItem("contact_messages_demo", JSON.stringify(list));
+    } catch (_) {
+      // ignore storage errors
     }
+    toast.success("Takk! Meldingen er mottatt (demo-modus).");
+    setForm({ name: "", email: "", phone: "", subject: "", message: "" });
+    setSubmitting(false);
   };
 
   return (
