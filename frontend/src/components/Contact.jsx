@@ -149,7 +149,7 @@ const Contact = () => {
                 <Field
                   testId="contact-input-name"
                   label="Navn"
-                  required
+                  markRequired
                   value={form.name}
                   onChange={update("name")}
                   placeholder="Ola Nordmann"
@@ -158,7 +158,7 @@ const Contact = () => {
                   testId="contact-input-email"
                   label="E-post"
                   type="email"
-                  required
+                  markRequired
                   value={form.email}
                   onChange={update("email")}
                   placeholder="ola@epost.no"
@@ -185,7 +185,6 @@ const Contact = () => {
                 </label>
                 <textarea
                   data-testid="contact-input-message"
-                  required
                   value={form.message}
                   onChange={update("message")}
                   rows={6}
@@ -223,14 +222,13 @@ const Contact = () => {
   );
 };
 
-const Field = ({ testId, label, required, ...props }) => (
+const Field = ({ testId, label, markRequired, ...props }) => (
   <div>
     <label className="text-xs font-bold uppercase tracking-[0.2em]">
-      {label} {required ? "*" : ""}
+      {label} {markRequired ? "*" : ""}
     </label>
     <input
       data-testid={testId}
-      required={required}
       {...props}
       className="mt-2 w-full bg-white border border-black/80 px-4 py-3 text-base focus:outline-none focus:ring-2 focus:ring-[#FFCC00] focus:border-black"
     />
