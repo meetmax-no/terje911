@@ -60,7 +60,7 @@ const Contact = () => {
         <div className="grid md:grid-cols-12 gap-12 md:gap-16">
           <div className="md:col-span-5">
             <span className="text-xs font-bold uppercase tracking-[0.3em] text-[#FFCC00]">
-              Kapittel 04 · Kontakt
+              Kapittel 06 · Kontakt
             </span>
             <h2 className="mt-4 font-display text-4xl md:text-5xl lg:text-6xl uppercase leading-[0.9]">
               La oss
@@ -122,7 +122,7 @@ const Contact = () => {
                     Base
                   </div>
                   <div className="font-display-medium text-lg md:text-xl">
-                    Norge · Garasjen
+                    Norge · Gjettum
                   </div>
                 </div>
               </div>

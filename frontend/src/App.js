@@ -5,6 +5,8 @@ import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import History from "@/components/History";
 import Models from "@/components/Models";
+import FamousOwners from "@/components/FamousOwners";
+import LeMans from "@/components/LeMans";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 
@@ -15,6 +17,8 @@ const Home = () => {
       <Hero />
       <History />
       <Models />
+      <FamousOwners />
+      <LeMans />
       <Contact />
       <Footer />
     </main>

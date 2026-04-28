@@ -4,6 +4,8 @@ import { ChevronRight, Phone, Mail, ArrowUpRight, Menu, X } from "lucide-react";
 const NAV_ITEMS = [
   { label: "Historie", href: "#historie" },
   { label: "Modeller", href: "#modeller" },
+  { label: "Eiere", href: "#eiere" },
+  { label: "Le Mans", href: "#lemans" },
   { label: "Kontakt", href: "#kontakt" },
 ];
 

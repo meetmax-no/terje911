@@ -1,107 +1,18 @@
 {
-  "theme": "LIGHT",
-  "archetype": "4 (Swiss & High-Contrast) + The Performance Pro (Archetype 2)",
-  "design_philosophy": "Sporty, dynamic, and high-performance. Inspired by European engineering and high-end automotive aesthetics. Uses Porsche Racing Yellow (#FFCC00) as an aggressive accent against stark white and deepest obsidian. Focus on large typography, cinematic imagery, and asymmetrical bento grids.",
-  "colors": {
-    "background": "#FFFFFF",
-    "surface": "#F8F9FA",
-    "surface_secondary": "#E9ECEF",
-    "primary": "#FFCC00",
-    "primary_hover": "#E6B800",
-    "text": "#0A0A0A",
-    "text_secondary": "#495057",
-    "border": "#DEE2E6"
-  },
-  "typography": {
-    "heading_font": "Cabinet Grotesk",
-    "body_font": "Inter",
-    "hierarchy": {
-      "h1": "text-5xl md:text-6xl lg:text-7xl font-black uppercase tracking-tighter",
-      "h2": "text-4xl md:text-5xl font-extrabold uppercase tracking-tight",
-      "h3": "text-2xl md:text-3xl font-bold tracking-tight",
-      "body": "text-lg text-text_secondary leading-relaxed",
-      "overline": "text-sm font-bold uppercase tracking-[0.2em] text-primary"
-    }
-  },
-  "layout_and_spacing": {
-    "philosophy": "Generous spacing combined with technical precision. Use Mode A: 'Tetris' Bento Grid for the models gallery. High contrast asymmetry.",
-    "container": "max-w-7xl mx-auto px-6 md:px-12",
-    "section_spacing": "py-24 md:py-32"
-  },
-  "components": {
-    "navigation": {
-      "style": "Crystal Glassmorphism (backdrop-blur-xl bg-white/70)",
-      "behavior": "Sticky top, Z-50. Minimal links, clear primary CTA in Porsche Yellow."
-    },
-    "hero": {
-      "layout": "Full viewport height (min-h-screen). Parallax background image.",
-      "content": "Massive typography overlay, left-aligned, text shadow for contrast. Subtitle and primary CTA. Dark overlay max bg-black/40."
-    },
-    "history_section": {
-      "layout": "Two-column staggered layout.",
-      "visuals": "Vintage 1963 photo. Large year numbers (e.g. '1963') as watermarks or massive display text.",
-      "content": "Norwegian text detailing the legacy from 1963 to today."
-    },
-    "models_gallery": {
-      "layout": "MODE A: The 'Tetris' Grid (grid-cols-1 md:grid-cols-12 gap-8).",
-      "items": "Cards with solid surface backgrounds, 1px border. On hover: slight lift, subtle shadow, border turns primary yellow. Specs shown inside.",
-      "models": ["Carrera", "Turbo S", "GT3", "Targa", "Dakar"]
-    },
-    "contact_section": {
-      "layout": "Split layout: Contact info (large text) on left, Form on right.",
-      "details": "Phone: 951 95 590, Email: terhe.haugensen@gmail.com",
-      "form": "Shadcn UI based inputs heavily customized. 1px black border inputs, square corners. Submit button in pure #FFCC00 with black text."
-    }
-  },
-  "media": {
-    "hero_image": {
-      "url": "https://static.prod-images.emergentagent.com/jobs/291ff879-ec4f-4029-bf20-8e00213d5b2b/images/3aed98513c9872c809f0ce1076bd55a69d03bfbbbbc902ef9b43dd4ee320d47d.png",
-      "description": "Dynamic yellow Porsche 911 GT3 RS speeding on a scenic Norwegian fjord mountain road at golden hour.",
-      "category": "hero"
-    },
-    "history_1963": {
-      "url": "https://images.unsplash.com/photo-1691315036348-85bf02674ae1?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NzZ8MHwxfHNlYXJjaHwyfHx2aW50YWdlJTIwcG9yc2NoZSUyMDkxMXxlbnwwfHx8fDE3NzczODU4NjZ8MA&ixlib=rb-4.1.0&q=85",
-      "description": "Vintage Porsche on display, representing 1963 history.",
-      "category": "history"
-    },
-    "model_gt3": {
-      "url": "https://images.pexels.com/photos/36237587/pexels-photo-36237587.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      "description": "Stylish white Porsche 911 GT3 RS.",
-      "category": "gallery"
-    },
-    "model_carrera": {
-      "url": "https://images.unsplash.com/photo-1605120002190-b0ebeea5b488?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2ODl8MHwxfHNlYXJjaHwzfHxQb3JzY2hlJTIwOTExJTIweWVsbG93fGVufDB8fHx8MTc3NzM4NTg0NXww&ixlib=rb-4.1.0&q=85",
-      "description": "Yellow Porsche 911 Carrera.",
-      "category": "gallery"
-    },
-    "model_turbo_s": {
-      "url": "https://images.unsplash.com/photo-1679478878845-af7294f28b27?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODF8MHwxfHNlYXJjaHwxfHxwb3JzY2hlJTIwOTExJTIwdHVyYm8lMjBzfGVufDB8fHx8MTc3NzM4NTg2Nnww&ixlib=rb-4.1.0&q=85",
-      "description": "White Porsche 911 Turbo S.",
-      "category": "gallery"
-    },
-    "model_dakar": {
-      "url": "https://static.prod-images.emergentagent.com/jobs/291ff879-ec4f-4029-bf20-8e00213d5b2b/images/c90e0e26ffc128b143b965d3fadc6200def8cfcd3d7fb253492980c7fc59df4b.png",
-      "description": "Action photography of a Porsche 911 Dakar drifting in sand.",
-      "category": "gallery"
-    },
-    "model_targa": {
-      "url": "https://static.prod-images.emergentagent.com/jobs/291ff879-ec4f-4029-bf20-8e00213d5b2b/images/fbd692476458be28540e98433aa41b7f1b378673832b7620ab42b5d32eec70fd.png",
-      "description": "Silver Porsche 911 Targa studio shot.",
-      "category": "gallery"
-    }
-  },
-  "motion_and_interactions": {
-    "hover_states": "Crisp transitions. Interactive elements must elevate slightly (-translate-y-1) and cast a structured shadow (not blurred glow).",
-    "scroll_animations": "Use Framer Motion to stagger grid items appearing. Lenis smooth scrolling is mandatory for premium feel."
-  },
-  "instructions_to_main_agent": [
-    "ALL text MUST be in Norwegian as requested.",
-    "Implement Lenis smooth scrolling for premium automotive feel.",
-    "Do NOT use center-alignment for everything. Use strong left-alignment to create architectural tension.",
-    "Use Phosphor icons (duotone weight) to break the corporate tech look.",
-    "For the models gallery, utilize the 'Tetris' grid layout with mixed aspect ratios for dynamic presentation.",
-    "Do not round corners excessively. Maximum rounded-md or pure square (rounded-none) to maintain the 'performance/technical' aesthetic.",
-    "Ensure 'data-testid' attributes are added to all CTAs, navigation links, and the contact form submit button.",
-    "For the Hero image, use bg-black/40 overlay to ensure the bright yellow CTA button and white typography pops perfectly."
-  ]
+  "image_urls": {
+    "owner_steve_mcqueen": "https://images.unsplash.com/photo-1691315036348-85bf02674ae1?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODl8MHwxfHNlYXJjaHwxfHxwb3JzY2hlJTIwOTExJTIwdmludGFnZXxlbnwwfHx8fDE3NzczOTU5Mzd8MA&ixlib=rb-4.1.0&q=85",
+    "owner_jerry_seinfeld": "https://images.unsplash.com/photo-1691315037880-75cac21a9889?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODl8MHwxfHNlYXJjaHwzfHxwb3JzY2hlJTIwOTExJTIwdmludGFnZXxlbnwwfHx8fDE3NzczOTU5Mzd8MA&ixlib=rb-4.1.0&q=85",
+    "owner_paul_newman": "https://images.unsplash.com/photo-1691315035631-1226f24cf2e3?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODl8MHwxfHNlYXJjaHwyfHxwb3JzY2hlJTIwOTExJTIwdmludGFnZXxlbnwwfHx8fDE3NzczOTU5Mzd8MA&ixlib=rb-4.1.0&q=85",
+    "owner_magnus_walker": "https://images.pexels.com/photos/36427283/pexels-photo-36427283.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "owner_patrick_dempsey": "https://images.pexels.com/photos/35849577/pexels-photo-35849577.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "owner_jay_leno": "https://images.unsplash.com/photo-1683403792821-7542e25aadcf?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1ODh8MHwxfHNlYXJjaHwxfHxwb3JzY2hlJTIwZ3QzJTIwcnN8ZW58MHx8fHwxNzc3Mzk1OTM3fDA&ixlib=rb-4.1.0&q=85",
+    "lemans_1970": "https://images.unsplash.com/photo-1659716689061-96e52afb127d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzl8MHwxfHNlYXJjaHwxfHxwb3JzY2hlJTIwcmFjZSUyMGNhciUyMGxlJTIwbWFuc3xlbnwwfHx8fDE3NzczOTU5Mzd8MA&ixlib=rb-4.1.0&q=85",
+    "lemans_1971": "https://images.unsplash.com/photo-1572317267428-183e7d531e50?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzl8MHwxfHNlYXJjaHwzfHxwb3JzY2hlJTIwcmFjZSUyMGNhciUyMGxlJTIwbWFuc3xlbnwwfHx8fDE3NzczOTU5Mzd8MA&ixlib=rb-4.1.0&q=85",
+    "lemans_1977": "https://images.unsplash.com/photo-1559534232-07e814de7f1d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzl8MHwxfHNlYXJjaHw0fHxwb3JzY2hlJTIwcmFjZSUyMGNhciUyMGxlJTIwbWFuc3xlbnwwfHx8fDE3NzczOTU5Mzd8MA&ixlib=rb-4.1.0&q=85",
+    "lemans_1979": "https://images.unsplash.com/photo-1689013391046-587d4d451026?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzl8MHwxfHNlYXJjaHwyfHxwb3JzY2hlJTIwcmFjZSUyMGNhciUyMGxlJTIwbWFuc3xlbnwwfHx8fDE3NzczOTU5Mzd8MA&ixlib=rb-4.1.0&q=85",
+    "lemans_1982": "https://images.pexels.com/photos/17187908/pexels-photo-17187908.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "lemans_1998": "https://images.pexels.com/photos/13409604/pexels-photo-13409604.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "lemans_2015": "https://images.unsplash.com/photo-1693149372829-7e0602d5809e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1ODh8MHwxfHNlYXJjaHw0fHxwb3JzY2hlJTIwZ3QzJTIwcnN8ZW58MHx8fHwxNzc3Mzk1OTM3fDA&ixlib=rb-4.1.0&q=85",
+    "lemans_2017": "https://images.unsplash.com/photo-1693149351428-15a4961d698d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1ODh8MHwxfHNlYXJjaHwzfHxwb3JzY2hlJTIwZ3QzJTIwcnN8ZW58MHx8fHwxNzc3Mzk1OTM3fDA&ixlib=rb-4.1.0&q=85"
+  }
 }
