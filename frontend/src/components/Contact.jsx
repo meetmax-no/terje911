@@ -8,7 +8,7 @@ const API = `${BACKEND_URL}/api`;
 
 const PHONE_DISPLAY = "951 95 590";
 const PHONE_TEL = "+4795195590";
-const EMAIL = "terhe.haugensen@gmail.com";
+const EMAIL = "terje.haugensen@gmail.com";
 
 const Contact = () => {
   const [form, setForm] = useState({
